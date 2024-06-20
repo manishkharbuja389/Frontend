@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4</title>
+    <!-- Form and form element -->
+    <style>
+        div{
+            border: 3px solid black;
+            padding: 20px;
+        }
+        h1{
+            color: red;
+        }
+     </style>
+</head>
+<body>
+    <div>
+        <form method="post">
+            First name: <input type = "text" name = "first_name" /><br>
+            Last name: <input type = "text" name = "last_name" /><br>
+            <textarea rows = "5" cols = "50" name = "description">
+                Enter description here...
+            </textarea><br>
+            <input type = "checkbox" name = "maths" value = "on"> Maths
+            <input type = "checkbox" name = "physics" value = "on"> Physics<br>
+            <input type = "radio" name = "subject" value = "maths"> Maths
+            <input type = "radio" name = "subject" value = "physics"> Physics<br>
+            <select name = "dropdown">
+                <option value = "Maths" selected>Maths</option>
+                <option value = "Physics">Physics</option>
+            </select><br>
+            <input type = "file" name = "fileupload" accept = "image/*" /> <br>
+            <input type = "submit" name = "submit" value = "Submit" />s
+            <input type = "reset" name = "reset"  value = "Reset" />
+            <input type = "button" name = "ok" value = "OK" /><br>
+            <input type = "image" name = "imagebutton" src = "E:\FrontEnd\images\frontendvsbackend.PNG" height="30px"/>
+         </form>
+    </div>
+</body>
+</html>

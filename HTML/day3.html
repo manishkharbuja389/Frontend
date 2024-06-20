@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3</title>
+    <!-- HTML table -->
+    <!-- iframe -->
+    <!-- Computer code -->
+    <style>
+        div{
+            border: 3px solid black;
+            padding: 20px;
+        }
+        h1{
+            color: red;
+        }
+        table,th,td{
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+    </style>  
+</head>
+<body>
+    <div>
+        <h1>Normal Table</h1>
+        <table>
+            <tr>
+                <th>Name</th>
+                <td>Ram</td>
+                <td>Mobile</td>
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td>Bhaktapur</td>
+                <td>98512454</td>
+            </tr>
+        </table> 
+        <h1>Rowspan</h1>      
+        <table>
+            <tr>
+                <th rowspan="2">Name</th>
+                <td>Ram</td>
+                <td>Mobile</td>
+            </tr>
+            <tr>
+                <td>Bhaktapur</td>
+                <td>98512454</td>
+            </tr>
+        </table> 
+        <h1>Colspan</h1>
+        <table>
+            <tr>
+                <th>Name</th>
+                <td colspan="2">Ram</td>
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td>Bhaktapur</td>
+                <td>98512454</td>
+            </tr>
+        </table> 
+    </div>
+    <div>
+        <h1>IFrame</h1>
+        <iframe src="day1.html"></iframe>
+        <iframe src="day1.html" height="200" width="300" title="Iframe Example"></iframe>
+    </div>
+    <div>
+        <h1>Computer Code</h1>
+        <p>&copy; Copyright</p>
+        <p>&#174; Registered</p>
+        <p>&spades; Spade</p>
+    </div>
+</body>
+</html>

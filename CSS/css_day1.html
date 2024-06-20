@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        /* selectors */
+        /* Unisersal selectors */
+        *{
+            margin:0;
+        }
+        /* Element selectors */
+        p{
+            color: brown;
+        }
+        /* Id selectors */
+        #para{
+            background-color: bisque;
+        }
+        /* Class selectors */
+        .main_heading{
+            background-color: blue;
+        }
+        /* Grouping selectors */
+        h1, h2{
+            color: chartreuse;
+        }
+        /* Nested selectors */
+        .first>p{
+            color: blue;
+        }
+        /*Pseudo Selectors*/
+        h1:hover{
+            background-color: chocolate;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <p>Class paragraph</p>
+    <p id="para">Class id</p>
+    <h1 class="main_heading" id="imp">Class Frontend</h1>
+    <h2>Class 2</h2>
+    <div class="first">
+        <p>I am a <span style="color: blue">good</span> student.</p>
+        <!-- color types 
+           rgb,hex value, hsl -->
+        <!-- <span></span>
+         To add highlights or other properties in between paragraphs, text or others.
+         It inherits parent's properties. -->
+        <h1>Bad</h1>
+    
+        <!-- Specificity Order 
+            Id > Class > Element -->
+
+
+    </div>
+</body>
+</html>
