@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 800px;
+            width: 300px;
+            background-color: gainsboro;
+            margin: 100px;
+            position: relative; /*If the position is set relative, then only the box having absolute will be relative to the parent.
+                                    Otherwise , the box ie. green box will be relative to the root html.*/
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+        }
+        .red{
+            background-color: #ff0000;
+            position: relative;
+            top:100px;
+            left:100px
+        }
+        .green{
+            background-color: green;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            z-index: 1;
+        }
+        .blue{
+            background-color: blue;
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+        }
+        .purple{
+            background-color: purple;
+            position: sticky;
+            top: 50px;
+        }
+        .spacer{
+            height: 300vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box red">Relative</div>
+        <div class="box green">Absolute</div>
+        <div class="box blue">Fixed</div>
+        <div class="box purple">Sticky</div>
+    </div>
+    <div class="spacer"></div>
+</body>
+</html>
