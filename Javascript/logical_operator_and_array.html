@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables and Data types</title>
+</head>
+<body>
+    <!-- <script src="Variables_and_Datatypes.js"></script>  -->
+    <script>
+        // Logical Operator
+        let a = 10;
+        let b = 20;
+        let c = 1;
+        
+        if(a && b){
+            console.log('Good');
+        }
+        if(a || c){
+            console.log('Good');
+        }
+        if(!c){
+            console.log('Good');
+        }
+        // array
+        let m = [1, 3, 5, 7];
+        let n = ['man','women'];
+        console.log(m[0]+m[1]);
+        console.log(n[0]+n[1]);
+        let u = m.length;
+        console.log('The lenght of the array is',m.length);
+        console.log('The lenght of the array is',u);
+        m.push(9);
+        console.log(m);
+        m.pop();
+        console.log(m);
+        m[2]=11;
+        console.log(m);
+        // multi dimensional array
+        let md = [
+            [1, 3, 5, 7],
+            [2, 4, 6, 8]
+                ];
+        console.log(md[1][2]);
+    </script>
+</body>
+</html>
