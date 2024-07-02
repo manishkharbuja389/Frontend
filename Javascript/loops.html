@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    <script>
+        // For loop 
+        // z = ['mango','banana','apple','strawberry'];
+        // for(i=0; i<5; i++){
+        //     console.log('Fruit',i+1,'is'z[i]);
+        //     console.log('Good');
+        // }
+        // for(i=1; i<=10; i++){
+        //     console.log(i,'. ','Manish');
+        // }
+        // While loop
+        let a = 1;
+        while(a>=100){
+            console.log(a,'. ','Manish');
+            a++;
+        }
+        // Do while loop
+        do{
+            console.log(a,'. ','Manish');
+            a++;
+        }
+        while(a>=100);
+        // for... of loop
+        z = ['mango','banana','apple','strawberry'];
+        for(let b of z){
+            console.log(b);
+        }
+        // for... in loop
+        let y = {
+            name: 'manish',
+            age: 26
+        };
+        console.log(y['name']);
+        console.log(y['age']);
+        for(key in y){
+            console.log(key,':',y[key]);
+        }
+
+    </script>
+</body>
+</html>
