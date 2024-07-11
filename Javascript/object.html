@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // object
+        let person = {
+        name:'Manish',
+        age:'26',
+        gender: 'male',
+        sayHello: function(){
+            console.log('My name is',this.name);
+        },
+        education: {
+            school:'motherland',
+            marks: 80
+        }
+        };
+        console.log(person['name']);
+        console.log(person.age);
+        person.sayHello();
+        // Modify object 
+        person.city = 'Bhaktapur';
+        person.age = 16;
+        console.log(person.city, person.age);
+        console.log(person.education.school);
+    </script>
+    
+</body>
+</html>
