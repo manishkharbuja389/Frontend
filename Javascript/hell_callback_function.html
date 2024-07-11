@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log('Good morning!');
+        // using setTimeout function to delay contents.
+        // it is a asynchronous function.
+        setTimeout(function () {
+            console.log("Good night!😊")
+        }, 3000);
+
+        console.log('Good evening!');
+
+        function getCheese(callback){
+            setTimeout(() =>{
+                let cheese = '🧀';
+                console.log('This is cheese', cheese);
+                callback(cheese);
+            }, 3000);
+        }
+
+        getCheese((cheese) => {
+            console.log("Got the cheese.",cheese);
+        });
+    </script>
+    
+</body>
+</html>
