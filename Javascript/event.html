@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>   
+    <button id = demo>Click Me😂</button>
+    <button id = demo>Click Me🤣</button>
+    <!-- <button onclick="alert('Namaste')">Click Me</button> -->
+     <p id =demo1>This is class.</p>
+    <script>
+        let c = 'manish';
+        console.log(typeof(c));
+        let a = document.querySelectorAll("#demo");
+        console.log(a);
+        function display(text){
+            console.log(typeof(text));
+            alert(text);
+        }
+        a[0].addEventListener("click", function(){
+            // alert("Good morning.");
+            a[0].textContent ='Clicked';
+            display('1')
+        });
+        function mouseover(){
+            a[1].textContent ='Clicked It';
+        }
+        function mouseout(){
+            a[1].textContent ='Click Me';
+        }
+        // add event listener
+        a[1].addEventListener("mouseover", mouseover);
+        a[1].addEventListener("mouseout", mouseout);
+        // remove event listener
+        a[1].removeEventListener("mouseout", mouseout);
+
+        document.addEventListener("keydown", function(){
+            console.log(event);
+            console.log("Key press",event.key);
+            let b = document.getElementById("demo1");
+            if(event.key=='ArrowDown'){
+                b.style.backgroundColor = "blue";
+            }
+        });
+        
+    </script>
+</body>
+</html>
