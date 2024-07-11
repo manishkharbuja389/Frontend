@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <script>
+        // Normal function
+        function a(){
+            console.log("Hello JS.")
+        }
+        a();
+        console.log("hello, hello");
+
+        // Funtion with argument
+        function b(name,lastname){
+            console.log('My name is',name,lastname);
+        }
+        b('Manish','Kharbuja');
+
+        function sum(num1, num2){
+            let c;
+            c=num1+num2;
+            console.log('The sum of the two numbers is',c);
+            // console.log('The sum of the two numbers is',num1+num2);
+        }
+        sum(10,15);
+        sum(20,13);
+        // Function with return statement
+        function sub(num1, num2){
+            d= num1-num2;
+            console.log('The value of d is',d);
+            return d;
+        }
+        let c= sub(5,2);
+        console.log('The subtraction of the two number is',c);
+        console.log('The subtraction of the two number is',sub(6,c)*5);
+        // annonymous funtion
+        let multiply = function(a,b){
+            return a*b;
+        }
+        console.log(multiply(2,3));
+
+        // arrow function
+        let name = () =>{
+            console.log('Manish');
+            }
+        name();
+        let square = (num) => num*num;
+        console.log(square(5));
+        
+        // if we keep the square brackets then we need to return the value
+        let square1 = (num) => {
+            a = num*num;
+        return a;}
+        console.log(square1(5));
+        
+        
+    </script>
+</body>
+</html>
