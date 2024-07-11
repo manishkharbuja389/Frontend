@@ -10,11 +10,15 @@
     <!-- <script src="first.js"></script> -->
     <script>
         // Arithmetic Operators
-        let a = 4;
+        let a = 3;
         let b = 2;
+        console.log(a += 1);
+        console.log(a += b);
         console.log('Number a is',a,'Number b is',b);
         console.log('Addition:',a+b);
         console.log('Subtraction',a-b);
+        console.log(a -= 1);
+        console.log(a -= b);
         console.log('Multiplication',a*b);
         console.log('Divide',a/b);
         console.log('Modulus',a%b);
@@ -30,8 +34,10 @@
         console.log(a+c);
         // console.log(a+d);
         console.log(a+parseInt(c));
+        console.log(a+Number(c));
         // Conversion of integer(number) to string
         x =b.toString();
+        x=String(x);
         console.log(a+x);
 
         // conditional statement
@@ -50,8 +56,8 @@
         if(a>10){
             console.log('a is greater than 10.')
         }
-        else if(a>6){
-            console.log('a is greater than 6.')
+        else if(a=4){
+            console.log('a is equal to 4.')
         }
         else if(a>3){
             console.log('a is greater than 3.')
@@ -66,13 +72,28 @@
             case(4):
                 console.log('Good');
                 break;
-            case(5):
+            case(4):
                 console.log(a+b);
                 break;
             default:
                 console.log('Bad');
         }
 
+        // single = assigns value.
+        // Comparision operator ==
+        let num9 = 10;
+        let num10 = 10;
+        let num11 = 11;
+        let res = num9 == num10;
+        let rest = num9 == num11;
+        console.log(res);
+        console.log(rest);
+
+        // === also check for the data type
+        let num12 = '10';
+        console.log(num9 == num12);
+        console.log(num9 === num12);
+        
     </script>
 </body>
 </html>
