@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adding DOM Elements Example</title>
+  <style>
+    .highlight {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <div id="myContainer">
+    <p>This is an existing paragraph.</p>
+  </div>
+  <script>
+    // Create a new element
+    const newParagraph = document.createElement("p");
+    // Create a text node
+    const newText = document.createTextNode("This is a new paragraph.");
+    // Append the text node to the new paragraph element
+    newParagraph.appendChild(newText);
+    // Access an existing container
+    const container = document.getElementById("myContainer");
+    // Append the new paragraph to the container
+    container.appendChild(newParagraph);
+    // You can also directly set the innerHTML property to add HTML content
+    container.outerHTML += "<p>This is another new paragraph with HTML content.</p>";
+    console.log(container);
+  </script>
+</body>
+</html>
