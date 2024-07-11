@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Object constructor function
+        function Person(name,age){
+            this.a =name;
+            this.b =age;
+            this.sayhello=function(){
+                console.log('Hello, my name is',this.a);
+            };
+        }
+        let person1 = new Person('Manish',26);
+        console.log('Hello, i am',person1.a,person1.b);
+        // To change the value of object.
+        person1 =new Person('Man','25');
+        console.log('Hello, i am',person1.a,person1.b);
+        person1.sayhello();
+    </script>
+</body>
+</html>
