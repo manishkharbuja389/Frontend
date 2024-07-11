@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise basics</title>
+</head>
+<body>
+    <script>
+        let ticket = new Promise(function (resolve, reject){
+          let isBoarded = false;
+          if(isBoarded){
+            resolve('You are boarded.');
+          }  
+          else{
+            reject('Your flight has been cancelled.')
+          }
+        });
+
+        ticket
+            .then((data) => {
+                console.log("Yes", data);
+            })
+            .catch((data) => {
+                console.log("no", data);
+            })
+            .finally(() =>{
+                console.log("Default");
+            })
+    </script>
+</body>
+</html>
