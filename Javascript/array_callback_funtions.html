@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const a =[1, 2, 3, 4, -1, -2, -3, -4];
+
+        let firstNeg = (num) => {
+            return num<0;
+        }
+        // find - It will return the first value of an array element that passes the test.
+        let result = a.find(firstNeg);
+        console.log(result);
+        // findIndex - It will return the index of an array element that passes the test.
+        console.log(a.findIndex(firstNeg));
+        // forEach() - It will call a function for each element.
+        a.forEach((num, i) =>{
+            console.log("array number", num, i);
+        })
+    </script>
+</body>
+</html>
