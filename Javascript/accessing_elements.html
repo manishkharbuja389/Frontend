@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo{
+            border: 5px solid black;
+        }
+    </style>
+</head>
+<body>
+    <p>Frontend</p>
+    <h1 id="pid">Frontend Class</h1>
+    <div>I am in frontend class.</div>
+    <div>I am not in frontend class.</div>
+    
+    <script>
+
+        let demo1 =document.querySelector(".demo");
+        console.log(demo1);
+
+        let demo2 =document.querySelectorAll(".demo");
+        console.log(demo2);
+
+        let demo3 =document.querySelector("p");
+        console.log(demo3);
+
+        let demo4 =document.querySelector("#pid");
+        console.log(demo4);
+
+        // Attribute Selector
+        // let a =1;
+        // let b =2;
+        // let demo5 = document.querySelectorAll("[data-type='value']");
+        // console.log(demo5);
+        // demo4.setAttribute("color","blue");
+
+        let demo6 = document.getElementById("pid");
+        console.log(demo6);
+        demo6.innerText = 'I am in class.'
+
+        let demo7 = document.getElementsByClassName("demo");
+        console.log(demo7);
+
+        let demo8 = document.getElementsByTagName("p");
+        console.log(demo8);
+
+        let z =2;
+        if(z<1){
+            demo3.innerText ="I am good.";
+            demo3.style.backgroundColor = "yellow";
+        }
+        else{
+            demo3.innerText ="I am bad.";
+            demo3.draggable = true;
+            // demo3.innerHTML ="<strong>I am bad.</strong>"; //replace the element
+            demo3.innerHTML +="<strong>I am bad.</strong>"; //add new element
+        }
+
+        let demo9 = document.getElementsByTagName("div");
+        console.log(demo9);
+        // demo9.classList.add('demo');
+
+        // console.log(typeof(demo9));
+        
+    </script>
+</body>
+</html>
